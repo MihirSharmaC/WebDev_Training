@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+      }
+      ul li {
+        display: inline-block;
+        padding: 0 5px;
+        margin: 2px;
+        font-size: 10px;
+        border: 5px black solid;
+        background: black;
+      }
+      ul {
+        display: block;
+        text-align: center;
+        background: rgba(128, 128, 128, 0.452);
+      }
+      a {
+        color: white;
+      }
+      p {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        border: 5px rgb(0, 0, 0) solid;
+        width: 50%;
+        height: 50%;
+      }
+      #p2 {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        border: 5px rgb(0, 0, 0) solid;
+        display: block;
+        width: 80%;
+      }
+      .peace {
+        background: mediumslateblue;
+        text-transform: uppercase;
+        font-weight: 800;
+        display: block;
+      }
+      .copyright {
+        display: block;
+        background: gray;
+        position: fixed;
+        bottom: 0;
+      }
+      form {
+        padding: 5px;
+        margin: 10px;
+      }
+      .form {
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul style="list-style-type: none">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <h1>Contact Us</h1>
+    <form action="#">
+      <div>
+        <br /><br /><br />
+        <div class="form">
+          <label for="Name">Name</label>
+          <input type="text" name="name" id="Name" />
+        </div>
+        <div class="form">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="form">
+          <label for="message">Message</label>
+          <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="50"
+            rows="5"
+            placeholder="Talk to me"
+          ></textarea>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

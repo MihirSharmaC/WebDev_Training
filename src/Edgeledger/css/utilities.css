@@ -14,9 +14,33 @@
   background-color: #28a745;
   border: none;
   border-radius: 5px;
+  box-shadow: 15px 15px teal;
+  animation: myMove2 0.5s;
+  animation-fill-mode: none;
 }
+
+@keyframes myMove {
+  from {
+    box-shadow: 15px 15px teal;
+  }
+  to {
+    box-shadow: 0px 0px transparent;
+  }
+}
+
+@keyframes myMove2 {
+  from {
+    box-shadow: 0px 0px transparent;
+  }
+  to {
+    box-shadow: 15px 15px teal;
+  }
+}
+
 .btn:hover {
   opacity: 0.9;
+  animation: myMove 0.5s;
+  animation-fill-mode: both;
 }
 
 .btn-primary,

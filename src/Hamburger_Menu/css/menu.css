@@ -135,3 +135,8 @@
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color: var(--secondary-color);
 }
+
+
+
+.menu-wrap{
+  content: "Error 404 : Not Found"}

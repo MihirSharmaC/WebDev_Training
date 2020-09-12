@@ -239,7 +239,7 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 900px) {
   #contact {
     height: 100vh;
   }

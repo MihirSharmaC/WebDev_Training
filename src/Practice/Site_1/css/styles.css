@@ -1,0 +1,348 @@
+:root {
+  --primary-color: #016a06;
+  --secondary-color: #000000aa;
+  --border-color: #a0c1ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--secondary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar .logo img {
+  opacity: 1;
+  width: 50px;
+  height: auto;
+  transition: opacity 1s linear;
+}
+
+.navbar .logo img:hover {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.navbar .nav-links ul {
+  opacity: 1;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-links ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.navbar .nav-links ul li a:hover {
+  background: var(--primary-color);
+  animation: boxRotation 0.2s infinite;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 0.2rem;
+  transition: all 0.2s linear;
+}
+
+@keyframes boxRotation {
+  0% {
+    border-bottom: 5px solid var(--border-color);
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  25% {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid var(--border-color);
+    border-right: 5px solid transparent;
+  }
+  50% {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid var(--border-color);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  75% {
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid var(--border-color);
+  }
+  100% {
+    border-bottom: 5px solid var(--border-color);
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+}
+
+/* Showcase */
+
+.showcase {
+  top: 0;
+  left: 0;
+  background: url("Overlord_III_EP09_022.png") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.showcase .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  background: #00000056;
+  height: 100%;
+}
+
+.showcase .showcase-container h1,
+.showcase .showcase-container h3 {
+  opacity: 1;
+  color: #fff;
+  font-size: 2.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.showcase .showcase-container h3 {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  background: var(--secondary-color);
+}
+
+.about .image {
+  padding: 2rem;
+}
+
+.about .image img {
+  box-shadow: -5px -5px 10px 5px #000;
+}
+
+.about .about-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  width: 50%;
+  align-items: center;
+  text-align: center;
+  border: 2px solid;
+  padding: 1rem;
+}
+
+.about .about-text h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-bottom: 1px solid;
+}
+
+.about .about-text p {
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: all 0.5s linear;
+  border: 2px solid white;
+}
+
+.about .about-text p:hover {
+  z-index: 10;
+  line-height: 2;
+  transition: all 0.5s linear;
+  animation: colorchange 9s infinite;
+}
+
+/* Services */
+
+.services {
+  padding-top: 2rem;
+  background: var(--primary-color);
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.services .section-heading {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  text-align: center;
+  transition: padding 0.5s ease;
+  border-bottom: 2px solid;
+}
+
+.services .section-heading h1 {
+  font-size: 2.2rem;
+}
+
+.services .section-heading:hover {
+  transition: all 0.5s ease 0.2s;
+  padding: 0 10px 40px 10px;
+}
+
+.services .section-heading:after {
+  content: "Not your usual services";
+  color: #fff;
+  font-size: 2rem;
+  justify-content: center;
+  transition: all 0.5s ease;
+  transition: opacity 0.1s linear;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.services .section-heading:hover:after {
+  transform: translateY(20px);
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.5s ease 0.3s;
+}
+
+.services .services-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 0 2rem;
+}
+
+.services .services-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.services .services-container .service-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.services .services-container .service-card .card-title {
+  padding: 1rem;
+}
+.services .services-container .service-card .card-image img {
+  display: block;
+  object-fit: cover;
+  width: 320px;
+  height: 320px;
+}
+
+.services .services-container .service-card .card-content {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+}
+
+.contact .contact-details {
+  background: var(--secondary-color);
+  color: #fff;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.contact .contact-details h1 {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.contact .contact-details h3 {
+  padding: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.contact .contact-details p {
+  font-size: 1.2rem;
+}
+
+.contact .message {
+  padding: 2rem;
+  width: 50vw;
+  background: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.contact .message input,
+.contact .message textarea {
+  padding: 1rem;
+  margin: 2rem;
+  border: none;
+  box-shadow: -5px 5px #333;
+}
+
+.contact .message input {
+  height: 2rem;
+}
+
+.contact .message a {
+  text-decoration: none;
+  color: white;
+  background: #357e8b;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10vw;
+  width: 10vw;
+  box-shadow: -10px 10px #333;
+}
+
+.contact .message a:hover {
+  opacity: 0.7;
+}
+
+.contact .message a:active {
+  box-shadow: none;
+  animation: moveButton 0.25s linear;
+  animation-iteration-count: 1;
+  /* transition: all 0.25s linear; */
+  opacity: 1;
+}
+
+@keyframes moveButton {
+  to {
+    transform: translate(-10px, 10px);
+  }
+}

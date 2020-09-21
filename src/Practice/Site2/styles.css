@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.main select {
+  width: 40vw;
+  height: 5vh;
+}

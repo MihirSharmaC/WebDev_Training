@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+
+    <!-- jQuery library -->
+
+    <!-- Latest compiled JavaScript -->
+
+    <script
+      src="https://kit.fontawesome.com/b449310c73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Tata AIA Life | Home</title>
+  </head>
+  <body>
+    <!-- nav dropdown -->
+
+    <div class="dropdown-nav" id="dropdown-nav">
+      <h3>Login as</h3>
+      <select name="" id="">
+        <option value="" disabled selected>Select</option>
+        <option value="">Customer</option>
+        <option value="">Corporate</option>
+        <option value="">Distributor</option>
+      </select>
+    </div>
+    <div class="navbar-btn" id="nav-btn-nb">
+      <button id="loginBtn" onclick="shrinkNav()">Login</button>
+    </div>
+    <nav class="navbar-nb">
+      <div class="navbar-top">
+        <div class="logo">
+          <a href="#"><img src="./images/tata-aia-life.png" alt="" /></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" name="" id="" placeholder="Search" />
+        </div>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Recruitment</a></li>
+            <li><a href="#">Tata Employee Offers</a></li>
+            <li><a href="#" class="remove-border">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-bottom-nb">
+        <div class="bottom-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="">Plans</a>
+              <div class="dropdown">
+                <ul>
+                  <li>
+                    <a
+                      onmouseover="mouseStatus(true)"
+                      onmouseout="mouseStatus(false)"
+                      href="#"
+                      id="elem1"
+                      >Protection</a
+                    >
+                  </li>
+                  <li><a href="#">Wealth</a></li>
+                  <li><a href="#">Savings</a></li>
+                  <li><a href="#">Retirement</a></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">View NAV</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Individual</a></li>
+                  <li><a href="#">Group</a></li>
+                  <li><a href="#">Datawise</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">Claims</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Online Claims Process</a></li>
+                  <li><a href="#">List of requirements</a></li>
+                  <li><a href="#">Claims FAQ</a></li>
+                  <li><a href="#">Track your claim</a></li>
+                  <li><a href="#">Track your group claim</a></li>
+                  <li><a href="#">Voice of customers</a></li>
+                  <li><a href="#">Simplified Claims Process</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">Library</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Calculator</a></li>
+                  <li><a href="#">E-Repository</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Glossary</a></li>
+                  <li><a href="#">Code of Conduct</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">Plans</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Lorem, ipsum.</a></li>
+                  <li><a href="#">Wealth Lorem, ipsum.</a></li>
+                  <li><a href="#">Savings Lorem, ipsum.</a></li>
+                  <li><a href="#">Retirement Lorem, ipsum.</a></li>
+                  <li><a href="#">Other Lorem, ipsum.</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Track Application</a></li>
+          </ul>
+        </div>
+        <div class="quick-links">
+          <a href="#">Quick Links <i class="fas fa-caret-down"></i></a>
+        </div>
+      </div>
+      <div
+        class="hover-expand hide"
+        id="elem1showcase"
+        onmouseleave="mouseOverExpand(false)"
+      >
+        <div class="hover-expand-btn">
+          <ul>
+            <li><a href="#">Level 1</a></li>
+            <li><a href="#">Level 2</a></li>
+            <li><a href="#">Level 3</a></li>
+            <li><a href="#">Level 4</a></li>
+          </ul>
+        </div>
+        <div class="hover-expand-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            veritatis voluptatem eaque perspiciatis maiores sunt, animi
+            accusantium officia iure quidem.
+          </p>
+        </div>
+        <div class="hover-expand-btn-bottom"></div>
+      </div>
+    </nav>
+    <section class="hover-right-nb">
+      <div class="right-btn-nb">
+        <i class="fas fa-pen-fancy"></i>
+        <p>Quick Pay</p>
+      </div>
+      <div class="right-btn-nb">
+        <i class="fas fa-handshake"></i>
+        <p>Meet Advisor</p>
+      </div>
+      <div class="right-btn-nb">
+        <i class="fas fa-phone"></i>
+        <p>Customer Service</p>
+      </div>
+    </section>
+    <div class="carousel-container">
+      <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators color-primary">
+          <li
+            data-target="#carousel-example-1z"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="./images/home-page-banner-covid.jpg" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/home-page-banner-DigitalServicing.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/home-page-banner-Claims_Initiatives-sm.jpg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-container no-border">
+      <h1>Highlights</h1>
+      <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators color-primary">
+          <li
+            data-target="#carousel-example-1z"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="./images/HP-highlight-01.png" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/HP-highlight-11.jpg" alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/HP-highlight-12.png" alt="Third slide" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-container no-border">
+      <h1>Videos</h1>
+      <div id="carousel-1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators color-primary">
+          <li
+            data-target="#carousel-example-1z"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="./images/Grah_pravesh.jpg" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/rakshakaran-hero.jpg" alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Kaala_Tika.jpg" alt="Third slide" />
+          </div>
+        </div>
+      </div>
+      <h2>Video Gallery</h2>
+    </div>
+
+    <footer class="footer-nb">
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+      </ul>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+      </ul>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+      </ul>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+      </ul>
+      <div class="social-footer">
+        <h3>Follow Us On</h3>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-youtube fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-linkedin fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+      </div>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
+
+<!-- <img src="./images/home-page-banner-covid.jpg" alt="" /> -->
+<!-- <img src="./images/home-page-banner-DigitalServicing.jpg" alt="" /> -->
+<!-- <img
+  src="./images/home-page-banner-Claims_Initiatives-sm.jpg"
+    alt=""
+  /> -->

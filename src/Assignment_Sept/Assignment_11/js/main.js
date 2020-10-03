@@ -27,3 +27,11 @@ $(window).scroll(function () {
     element.classList.add("scrollTopAnimVanish");
   }
 });
+
+function changeActive(el) {
+  elList = document.getElementsByClassName("filter");
+  for (let i = 0; i < 4; i++) {
+    elList[i].classList.remove("active");
+  }
+  el.classList.add("active");
+}

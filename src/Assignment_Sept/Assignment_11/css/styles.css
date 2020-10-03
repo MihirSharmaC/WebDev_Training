@@ -265,3 +265,8 @@ footer {
   background-color: #dc3545 !important;
   color: #fff !important;
 }
+
+.filter-marker .active {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}

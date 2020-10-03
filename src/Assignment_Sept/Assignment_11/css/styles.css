@@ -1,0 +1,267 @@
+* {
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.nav-item .nav-link {
+  color: #6c757d !important;
+  font-size: 1.2rem;
+}
+
+.deepMenu {
+  position: absolute;
+  left: 10vw;
+  top: 13vh;
+}
+
+.dropdown-menu {
+  animation: dropdown 0.2s linear 1;
+  animation-fill-mode: forwards;
+}
+
+.dropdown-item {
+  color: #6c757d !important;
+}
+
+.dropdown-item:hover {
+  color: #dc3545;
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+/* .carousel {
+  height: 100vh;
+  position: relative;
+} */
+.carousel-inner {
+  position: relative;
+}
+
+.carousel img {
+  height: 100vh;
+  object-fit: cover;
+  /* z-index: -1; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(51, 51, 51, 0.808);
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #dc3545;
+}
+
+.carousel-inner .active h1 {
+  animation: headingAnim 0.6s linear forwards 1 0.3s;
+}
+.carousel-inner .active p {
+  animation: paraAnim 0.6s linear forwards 1 0.8s;
+}
+.carousel-inner .active button {
+  animation: buttonAnim 0.6s linear forwards 1 1.4s;
+}
+
+.carousel-inner h1 {
+  opacity: 0;
+}
+.carousel-inner p {
+  opacity: 0;
+}
+.carousel-inner button {
+  opacity: 0;
+}
+
+@keyframes headingAnim {
+  from {
+    transform: translateY(-4rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes paraAnim {
+  from {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes buttonAnim {
+  from {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.companies img {
+  width: 8%;
+  /* height: 10%; */
+  object-fit: fill;
+  filter: grayscale(100%);
+  transition: all 0.2s linear;
+}
+
+.companies img:hover {
+  filter: grayscale(0);
+  transform: scale(1.15);
+}
+
+.container > h4:after {
+  position: relative;
+  top: -0.5rem;
+  left: 1rem;
+  content: "_______________";
+  color: #dc3545;
+}
+
+.card i {
+  padding-top: 20px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card:hover .card-title {
+  color: #dc3545 !important;
+}
+
+.image-container-projects {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container-projects > .overlay-projects {
+  transition: all 0.2s linear;
+  opacity: 0;
+}
+
+.image-container-projects:hover > .overlay-projects {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.overlay-projects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(51, 51, 51, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.image-container-projects img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container-projects:hover > img {
+  transform: scale(1.15);
+}
+
+.lessSpace p {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #272b30;
+}
+
+#links .social i:hover {
+  background-color: #dc3545 !important;
+}
+
+#links .navigationLinks a:hover {
+  color: #fff !important;
+}
+
+.dropdown-menu a:hover {
+  color: #dc3545 !important;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vw;
+  opacity: 0;
+}
+
+.scrollTopAnimAppear {
+  animation: animScrollOpacityUp 0.3s linear forwards 1;
+}
+.scrollTopAnimVanish {
+  animation: animScrollOpacityDown 0.3s linear forwards 1;
+}
+
+@keyframes animScrollOpacityUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes animScrollOpacityDown {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.card-toggle-links {
+  color: #272b30 !important;
+}
+
+.card-toggle-links:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}

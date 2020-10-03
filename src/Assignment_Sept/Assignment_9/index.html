@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b449310c73.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row main">
+      <div
+        id="myCarousel"
+        class="carousel slide col-lg-6 col-xl-7 d-none d-lg-flex align-items-stretch justify-content-center p-0"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./pexels-photo-3464543.jpeg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="./pexels-photo-4338505.jpeg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="./pexels-photo-4538783.jpeg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="./pexels-photo-4871017.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="formDiv col-xl-5 col-lg-6 col-md-12 d-flex flex-column align-items-center justify-content-around p-0"
+      >
+        <h2 class="display-4 text-center">Login to Continue</h2>
+        <form class="w-75">
+          <div class="form-group">
+            <input type="email" class="form-control py-4" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control py-4"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group d-flex justify-content-between">
+            <div class="d-flex">
+              <input
+                type="checkbox"
+                name="rememberMe"
+                id=""
+                class="mt-1 input-lg"
+              />
+              <label for="rememberMe" class="pl-2">Remember me</label>
+            </div>
+            <a href="#" class="text-primary">Forgot Password?</a>
+          </div>
+          <div class="form-group">
+            <input
+              type="submit"
+              value="Login"
+              class="form-control btn btn-primary btn-block px-5 py-3"
+            />
+          </div>
+        </form>
+        <div class="social">
+          <p class="lead">or sign up using</p>
+          <a href="#" class="btn btn-transparent"
+            ><i class="fab fa-facebook fa-2x text-dark"></i
+          ></a>
+          <a href="#" class="btn btn-transparent"
+            ><i class="fab fa-twitter fa-2x text-dark"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

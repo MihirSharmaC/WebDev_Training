@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-primary {
+  background-color: rgb(27, 188, 155) !important;
+}
+
+.btn-primary {
+  background-color: rgb(27, 188, 155) !important;
+}
+
+#btn-change:hover {
+  background-color: rgb(19, 138, 114) !important;
+}
+
+#text-change:hover {
+  color: rgb(27, 188, 155) !important;
+}
+
+section img {
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+}
+
+section img:hover {
+  opacity: 0.8;
+}

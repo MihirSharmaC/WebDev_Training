@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b449310c73.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="navbar-brand">
+          <h3 class="text-light">Start Bootstrap</h3>
+        </div>
+        <button
+          class="navbar-toggler text-light bg-primary"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+        Menu
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-2">
+              <a id="text-change" href="#" class="nav-link h3 text-light">Portfolio</a>
+            </li>
+            <li class="nav-item px-2">
+              <a id="text-change" href="#" class="nav-link h3 text-light">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a id="text-change" href="#" class="nav-link h3 text-light">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="bg-primary pt-3 mt-3">
+      <div class="row flex-column align-items-center justify-content-center w-100">
+        <img src="./avataaars.svg" alt="" class="image-fluid w-25 h-25 py-5">
+        <h2 class="display-1 font-weight-bold border-bottom border-light pb-4 mb-3 text-light text-center">Start Bootstrap</h2>
+        <h3 class="h3 pt-3 pb-5 text-light">Graphic Artist - Web Designer - Illustrator</h3>
+      </div>
+    </header>
+
+
+    <!-- Protfolio -->
+
+    <section class="bg-light text-dark pb-5">
+        <h2 class="display-1s font-weight-bold border-bottom border-dark pb-5 mb-5 text-dark text-center">Portfolio</h2>
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mt-3 rounded border-0"><a href=""><img class="img-fluid" src="https://picsum.photos/400/300" alt=""></a></div>
+            <div class="col-lg-4 col-md-6 mt-3 rounded border-0"><a href=""><img class="img-fluid" src="https://picsum.photos/400/300" alt=""></a></div>
+            <div class="col-lg-4 col-md-6 mt-3 rounded border-0"><a href=""><img class="img-fluid" src="https://picsum.photos/400/300" alt=""></a></div>
+          <!-- </div> -->
+          <!-- <div class="row ml-auto mr-auto"> -->
+            <div class="col-lg-4 col-md-6 mt-3 rounded border-0"><a href=""><img class="img-fluid" src="https://picsum.photos/400/300" alt=""></a></div>
+            <div class="col-lg-4 col-md-6 mt-3 rounded border-0"><a href=""><img class="img-fluid" src="https://picsum.photos/400/300" alt=""></a></div>
+            <div class="col-lg-4 col-md-6 mt-3 rounded border-0"><a href=""><img class="img-fluid" src="https://picsum.photos/400/300" alt=""></a></div>
+          <!-- </div> -->
+          </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="bg-light pt-5">
+      <div
+        class="row justify-content-center align-items-center flex-column w-100"
+      >
+      <div class="col-lg-12"></div>
+        <h3
+          class="mt-5 mb-5 display-1 text-underline border-bottom border-dark"
+        >
+          Contact me
+        </h3>
+      </div>
+      <div
+        class="row w-100 flex-column align-items-center justify-content-center"
+      >
+        <form class="border-0 border-bottom row flex-column mb-5 w-50">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control input-lg border-left-0 border-top-0 border-right-0 rounded-0 bg-light pr-5 py-4"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control input-lg border-left-0 border-top-0 border-right-0 rounded-0 bg-light pr-5 py-4"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control input-lg border-left-0 border-top-0 border-right-0 rounded-0 bg-light pr-5 py-4"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              cols="25"
+              rows="5"
+              class="form-control input-lg border-left-0 border-top-0 border-right-0 rounded-0 bg-light pr-5 py-4"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button id="btn-change" class="btn bg-primary text-light py-3 px-4 align-self-start">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-4 text-center mt-4">
+            <h3>Location</h3>
+            <p class="mt-5 mb-0 lead">2215 John Daniel Drive</p>
+            <p class="lead">Clark, MO 65243</p>
+          </div>
+          <div class="col-lg-4 text-center mt-4">
+            <h3>Around The Web</h3>
+            <ul
+              class="list-unstyled d-flex align-items-center justify-content-center"
+            >
+              <li><a
+                  href="#"
+                  class="btn btn-outline-light mx-2 p-3 border rounded-circle"
+                ><i class="fab fa-facebook fa-2x"></i></li></a>
+              <li>
+              <li><a
+                  href="#"
+                  class="btn btn-outline-light mx-2 p-3 border rounded-circle"
+                ><i class="fab fa-twitter fa-2x"></i></li></a>
+              <li>
+              <li><a
+                  href="#"
+                  class="btn btn-outline-light mx-2 p-3 border rounded-circle"
+                ><i class="fab fa-linkedin fa-2x"></i></li></a>
+              <li>
+                <a
+                  href="#"
+                  class="btn btn-outline-light mx-2 p-3 border rounded-circle"
+                >
+                  <i class="fa fa-dribbble fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 text-center mt-4">
+            <h3>About Freelancer</h3>
+            <p class="lead">Freelance is a free to use, MIT licensed Bootstrap theme created by </p><p class="lead"><a href=""> Start Bootstrap</a> .</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section id="copyright" class=" bg-dark text-light">
+      <div class="container p-3">
+        <div class="row justify-content-center">
+        <p class="text-muted">Copyright &copy; Your Website 2020</p>
+      </div>
+      </div>
+    </section>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

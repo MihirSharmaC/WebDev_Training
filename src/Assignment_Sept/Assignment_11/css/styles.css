@@ -64,6 +64,21 @@ a:hover {
   /* z-index: -1; */
 }
 
+#detailsCarousel {
+  height: 70vh;
+  object-fit: cover;
+}
+
+#detailsCarousel .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(51, 51, 51, 0.808);
+  width: 100vw;
+  height: 70vh !important;
+}
+
 .overlay {
   position: absolute;
   top: 0;

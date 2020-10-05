@@ -10,13 +10,6 @@ function dropdownTwoTrigger() {
   document.getElementById("dropdown2").classList.toggle("flex-column");
 }
 
-// function getOffset() {
-//   var element = window.scrollY;
-//   //   var top = element.scrollTop;
-//   console.log(element);
-// }
-
-// var element = null;
 $(window).scroll(function () {
   var element = document.getElementById("scrollTop");
   if (window.scrollY > 300) {

@@ -1,13 +1,23 @@
+function dropdownZeroTrigger() {
+  document.getElementById("dropdown1").classList.add("d-none");
+  document.getElementById("dropdown1").classList.remove("d-flex");
+  document.getElementById("dropdown1").classList.remove("flex-column");
+  document.getElementById("dropdown2").classList.add("d-none");
+  document.getElementById("dropdown2").classList.remove("d-flex");
+}
+
 function dropdownOneTrigger() {
   document.getElementById("dropdown1").classList.toggle("d-none");
   document.getElementById("dropdown1").classList.toggle("d-flex");
   document.getElementById("dropdown1").classList.toggle("flex-column");
+  document.getElementById("dropdown2").classList.add("d-none");
+  document.getElementById("dropdown2").classList.remove("d-flex");
 }
 
 function dropdownTwoTrigger() {
   document.getElementById("dropdown2").classList.toggle("d-none");
   document.getElementById("dropdown2").classList.toggle("d-flex");
-  document.getElementById("dropdown2").classList.toggle("flex-column");
+  document.getElementById("dropdown2").classList.add("flex-column");
 }
 
 $(window).scroll(function () {

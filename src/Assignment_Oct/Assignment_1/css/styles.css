@@ -1,0 +1,23 @@
+.header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.form-control,
+.btn-block {
+  border-radius: 100px;
+}
+
+.form-control:focus {
+  outline: none;
+}
+
+.container {
+  height: 90vh;
+  background-color: #fff;
+  border-radius: 20px !important;
+}
+
+body {
+  background-color: #eee;
+}

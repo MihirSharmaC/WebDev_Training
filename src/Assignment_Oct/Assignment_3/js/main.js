@@ -9,18 +9,14 @@ x.then((data) => {
 });
 var drop = document.getElementById("cCode");
 
-setTimeout(() => {
-  drop = document.getElementById("cCode");
-}, 1000);
-
 document.body.addEventListener("load", updateFrame("AED"));
 
 var storeSelected = "AED";
 document
   .querySelector("button")
-  .addEventListener("click",() =>updateFrame(storeSelected));
+  .addEventListener("click", () => updateFrame(storeSelected));
 function updateFrame(data) {
-  storeSelected = data; 
+  storeSelected = data;
   coin.getData(data).then((res) => {
     ui.placePriceData(res);
   });

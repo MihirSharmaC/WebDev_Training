@@ -20,9 +20,7 @@ document
   .querySelector("button")
   .addEventListener("click",() =>updateFrame(storeSelected));
 function updateFrame(data) {
-  console.log("called");
   storeSelected = data; 
-  //   console.log(data);
   coin.getData(data).then((res) => {
     ui.placePriceData(res);
   });

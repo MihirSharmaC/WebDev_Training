@@ -1,21 +1,34 @@
 class Coin {
-  async getData() {
-    const coinResponse = await fetch(
-      "https://api.coindesk.com/v1/bpi/supported-currencies.json",
-      {
-        method: "POST",
-        mode: "cors", // no-cors, cors, *same-origin *=default
-        credentials: "include", // *same-origin
-      }
-    )
-      .then(async (coinResponse) => {
-        const coinResponseData = await coinResponse.json();
-        console.log(coinResponseData);
-      })
-      .catch((coinResponse) => console.log(coinResponse));
+  async getCountries() {
+    const res = await fetch("./js/countries.json");
+    return await res.json();
+    // const resData = await res.json();
+    // return await res;
+    // return resData;
   }
 
-  //   async getList() {
-
-  //   }
+  async getData(cCode) {
+    const res = await fetch(
+      `https://api.coindesk.com/v1/bpi/currentprice/${cCode}.json`
+    );
+    const usd = await fetch(
+      `https://api.coindesk.com/v1/bpi/currentprice/USD.json`
+    );
+    const gbp = await fetch(
+      `https://api.coindesk.com/v1/bpi/currentprice/GBP.json`
+    );
+    const eur = await fetch(
+      `https://api.coindesk.com/v1/bpi/currentprice/EUR.json`
+    );
+    const resData = await res.json();
+    const usdData = await usd.json();
+    const gbpData = await gbp.json();
+    const eurData = await eur.json();
+    return {
+      resData,
+      usdData,
+      gbpData,
+      eurData,
+    };
+  }
 }

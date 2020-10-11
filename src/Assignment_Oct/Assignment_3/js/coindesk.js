@@ -2,9 +2,6 @@ class Coin {
   async getCountries() {
     const res = await fetch("./js/countries.json");
     return await res.json();
-    // const resData = await res.json();
-    // return await res;
-    // return resData;
   }
 
   async getData(cCode) {
